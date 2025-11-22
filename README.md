@@ -9,3 +9,4 @@
 4. Запустить: uvicorn backend.main:app --reload
 5. Открыть http://127.0.0.1:8000/
 # science-day-landing
+# science-day-landing
