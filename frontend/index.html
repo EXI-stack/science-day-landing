@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День науки — регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>День науки</h1>
+        <p>20 декабря 2025 — Школа №1</p>
+    </header>
+
+    <main>
+        <section class="countdown">
+            <h2>До мероприятия осталось:</h2>
+            <div class="timer" id="timer">
+                <div class="time-unit">
+                    <span id="days">00</span>
+                    <div>дней</div>
+                </div>
+                <div class="time-unit">
+                    <span id="hours">00</span>
+                    <div>часов</div>
+                </div>
+                <div class="time-unit">
+                    <span id="minutes">00</span>
+                    <div>минут</div>
+                </div>
+                <div class="time-unit">
+                    <span id="seconds">00</span>
+                    <div>секунд</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Регистрация участника</h2>
+            <form id="regForm">
+                <label>Имя
+                    <input id="name" name="name" type="text" placeholder="Иван Иванов" required>
+                </label>
+                <label>Телефон
+                    <input id="phone" name="phone" type="text" placeholder="+79998887766" required>
+                </label>
+                <label>Возраст
+                    <input id="age" name="age" type="number" placeholder="14" min="5" max="99" required>
+                </label>
+                <button type="submit">Отправить заявку</button>
+            </form>
+            <p id="result" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Контакты: EXI@Russia.ru | Телефон: +7 (123) 456-78-90</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
